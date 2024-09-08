@@ -1,4 +1,4 @@
-# Active Directory & Group Policy HomeLab
+# Active Directory and Group Policy Home Lab
 
 ## Description
 
