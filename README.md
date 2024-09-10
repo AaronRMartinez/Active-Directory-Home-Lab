@@ -2,7 +2,7 @@
 
 ## Description
 
-**Utilized Oracle VM VirtualBox and a Windows Server ISO file to install and configure an Active Directory in order exercise common practices**
+**Utilized Oracle VM VirtualBox and a Windows Server ISO file to install and configure an Active Directory (AD) in order exercise common practices**
 
 ## Tools
 
@@ -12,4 +12,4 @@
 
 ## Languages Used
 
-**Powershell:**
+**Powershell:** Script used to list AD users, configure roaming user profiles, create AD accounts, and move disabled users to a designated Organizational Unit
