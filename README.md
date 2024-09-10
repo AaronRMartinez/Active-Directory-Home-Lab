@@ -6,9 +6,7 @@
 
 ## Tools
 
-**Oracle VM VirtualBox:**
-
-**Active Directory:**
+**Oracle VM VirtualBox:** Used to virtualize both a Window Server operating system and a Windows 10 operating system as a guest machine
 
 ## Languages Used
 
