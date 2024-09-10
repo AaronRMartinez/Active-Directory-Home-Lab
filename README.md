@@ -2,7 +2,7 @@
 
 ## Description
 
-**Utilized Oracle VM VirtualBox and a Windows Server ISO file to install and configure an Active Directory (AD) in order exercise common practices**
+**Utilized Oracle VM VirtualBox with both Windows Server and Windows 10 ISO files to install and configure Active Directory (AD), practicing common Group Policy configurations and administrative tasks.**
 
 ## Tools
 
