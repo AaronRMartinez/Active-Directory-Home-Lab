@@ -20,6 +20,12 @@ Downloaded and installed Oracle VM VirtualBox with the intention of running virt
 
 With the domain controller deployed with Active Directory established, numerous AD procedures and Group Policies were performed. Such as:
 
-AD Tasks
+AD Procedures
   - Creating Users
   - Searching Objects
+  - Resetting User Passwords
+  - Disabling and Deleting User Accounts
+  - Setting Up a Logon Banner
+  - Configuring Roaming Profiles for User Accounts
+  - Creating a System State Backup
+  - Restoring an Active Directory Backup
