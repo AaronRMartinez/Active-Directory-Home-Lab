@@ -4,7 +4,7 @@
 
 **Utilized Oracle VM VirtualBox with both Windows Server and Windows 10 ISO files to install and configure Active Directory (AD), practicing common Group Policy configurations and administrative tasks.**
 
-Used Oracle VM VirtualBox to run virtual machines for both Windows Server and Windows 10 operating systems. A domain controller was established using the Windows Server ISO, and the domain was created afterward. The domain controller was then configured with NAT, routing, and DHCP. 
+Used Oracle VM VirtualBox to run virtual machines for both Windows Server and Windows 10 operating systems. A domain controller was established using the Windows Server ISO, and the domain was created afterward. The domain controller was then configured with NAT, routing, and DHCP. With the domain controller set up, numerous common AD procedures were exercised. 
 
 ## Tools
 
@@ -29,3 +29,13 @@ AD Procedures
   - Configuring Roaming Profiles for User Accounts
   - Creating a System State Backup
   - Restoring an Active Directory Backup
+
+Group Policy Procedures
+  - Creating and Linking Group Policy Objects (GPOs)
+  - Editing GPOs
+  - Deploying Software
+  - Mapping Network Share Drives
+  - Configuring Domain Password and Account Lockout Policies
+  - Deploying Password Policies
+  - Configuring Windows Firewall
+  - Configuring Windows Registry Settings
