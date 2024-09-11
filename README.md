@@ -39,3 +39,5 @@ Group Policy Procedures
   - Deploying Password Policies
   - Configuring Windows Firewall
   - Configuring Windows Registry Settings
+
+Any Group Policy troubleshooting was conducted by either utilizing Resultant Set of Policy (RSOP.msc) or the Command Prompt. Executing commands such as *gpresult /r*.
