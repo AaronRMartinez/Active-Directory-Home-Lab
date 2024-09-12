@@ -46,4 +46,4 @@ Group Policy Procedures
 
 Any Group Policy troubleshooting was conducted by either utilizing Resultant Set of Policy (RSOP.msc) or the Command Prompt. Executing commands such as **gpresult /r**.
 
-PowerShell scripts were implemented to automate several tedious Active Directory administrative tasks. 
+In order to automate laborious AD administrative tasks, PowerShell script execution was enabled. 
