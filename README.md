@@ -34,6 +34,15 @@ AD Procedures
   - Creating a System State Backup
   - Restoring an Active Directory Backup
 
+### Resetting User Password
+![AD Resetting User Password](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20ResetPassword.jpg)
+
+### Setting Up Logon Banner
+![AD Setting Up Logon Banner](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20InteractiveLogon.jpg)
+
+### Creating a System State Backup
+![AD Creating System State Backup](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20CreatingBackup.jpg)
+
 Group Policy Procedures
   - Creating and Linking Group Policy Objects (GPOs)
   - Editing GPOs
