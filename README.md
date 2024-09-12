@@ -24,7 +24,7 @@ Downloaded and installed Oracle VM VirtualBox with the intention of running virt
 
 With the domain controller deployed with Active Directory established, numerous AD procedures and Group Policies were performed. Such as:
 
-AD Procedures
+### AD Procedures
   - Creating Users
   - Searching Objects
   - Resetting User Passwords
@@ -43,7 +43,7 @@ AD Procedures
 ### Creating a System State Backup
 ![AD Creating System State Backup](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20CreatingBackup.jpg)
 
-Group Policy Procedures
+### Group Policy Procedures
   - Creating and Linking Group Policy Objects (GPOs)
   - Editing GPOs
   - Deploying Software
@@ -63,6 +63,9 @@ Group Policy Procedures
 ![GP Configuring Windows Firewall](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20GPFirewall.jpg)
 
 Any Group Policy troubleshooting was conducted by either utilizing Resultant Set of Policy (RSOP.msc) or the Command Prompt. Executing commands such as **gpresult /r**.
+
+### Group Policy Troubleshooting with Command Prompt
+![GP Troubleshooting with Command Prompt](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20GPTroubleshootingCmmd.jpg)
 
 In order to automate laborious AD administrative tasks, PowerShell script execution was enabled. Once implemented, several PowerShell scripts were utilized to conduct common AD tasks. Such as:
 
