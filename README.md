@@ -50,11 +50,15 @@ In order to automate laborious AD administrative tasks, PowerShell script execut
 
 **Creating User Accounts**
 
-```Import-Module ActiveDirectory
+```
+﻿# Import AD Module
+Import-Module ActiveDirectory
 
+# Grab variables from user
 $firstname = Read-Host -Prompt "Please enter the first name"
 $lastname = Read-Host -Prompt "Please enter the last name"
 
+# Create the AD User
 New-ADUser `
     -Name "$firstname $lastname" `
     -GivenName $firstname `
@@ -63,4 +67,35 @@ New-ADUser `
     -AccountPassword (ConvertTo-SecureString "P@$$w0rd123" -AsPlainText -Force) `
     -Path "OU=Domain Users,OU=instructorpaul,DC=instructorpaul,DC=com" `
     -ChangePasswordAtLogon 1
+```
+
+**Configuring Roaming Profile Paths**
+
+```
+﻿# Importing AD module
+Import-Module ActiveDirectory
+
+# Get all members of the roaming profile group
+Get-ADGroupMember 'Roaming Profile Users' |
+    # Loop through each user
+    ForEach-Object {
+        # Do this for each member
+        Set-ADUser -Identity $_.SamAccountName -ProfilePath ("\\DC\Profiles$\" + $_.SamAccountName)
+    }
+```
+
+**Moving Disabled Users to a Designated OU for Disabled Users**
+
+```
+ Import the AD Module
+Import-Module ActiveDirectory
+
+# List all disabled AD users
+Search-ADAccount -AccountDisabled | Select-Object Name, DistinguishedName
+
+# Move all disabled AD users to disabled users OU
+Search-ADAccount -AccountDisabled | Where {$_.DistinguishedName -notlike "*OU=Disabled Users*"} | Move-ADObject -TargetPath "OU=Disabled Users,OU=instructorpaul,DC=instructorpaul,DC=com"
+
+# Disable all users in the disabled users OU
+Get-ADUser -Filter {Enabled -eq $True} -SearchBase "OU=Disabled Users,OU=instructorpaul,DC=instructorpaul,DC=com" | Disable-ADAccount
 ```
