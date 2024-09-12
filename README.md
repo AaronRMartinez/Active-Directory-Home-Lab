@@ -87,6 +87,8 @@ Get-ADGroupMember 'Roaming Profile Users' |
     }
 ```
 
+![PowerShell script for Configuring Roaming Profile Paths](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20PWRShellConfigureProfilePath.jpg)
+
 **Moving Disabled Users to a Designated OU for Disabled Users**
 
 ```
@@ -102,3 +104,5 @@ Search-ADAccount -AccountDisabled | Where {$_.DistinguishedName -notlike "*OU=Di
 # Disable all users in the disabled users OU
 Get-ADUser -Filter {Enabled -eq $True} -SearchBase "OU=Disabled Users,OU=TEST mydomain,DC=mydomain,DC=com" | Disable-ADAccount
 ```
+
+![PowerShell script for Moving Disabled Users to Disabled Users OU](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20PWRShellDisabledUsers.jpg)
