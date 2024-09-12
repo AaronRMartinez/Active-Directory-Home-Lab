@@ -64,8 +64,8 @@ New-ADUser `
     -GivenName $firstname `
     -Surname $lastname `
     -UserPrincipalName "$firstname.$lastname" `
-    -AccountPassword (ConvertTo-SecureString "P@$$w0rd123" -AsPlainText -Force) `
-    -Path "OU=Domain Users,OU=instructorpaul,DC=instructorpaul,DC=com" `
+    -AccountPassword (ConvertTo-SecureString "Password1" -AsPlainText -Force) `
+    -Path "OU=Domain Users,OU=TEST mydomain,DC=mydomain,DC=com" `
     -ChangePasswordAtLogon 1
 ```
 
@@ -94,8 +94,8 @@ Import-Module ActiveDirectory
 Search-ADAccount -AccountDisabled | Select-Object Name, DistinguishedName
 
 # Move all disabled AD users to disabled users OU
-Search-ADAccount -AccountDisabled | Where {$_.DistinguishedName -notlike "*OU=Disabled Users*"} | Move-ADObject -TargetPath "OU=Disabled Users,OU=instructorpaul,DC=instructorpaul,DC=com"
+Search-ADAccount -AccountDisabled | Where {$_.DistinguishedName -notlike "*OU=Disabled Users*"} | Move-ADObject -TargetPath "OU=Disabled Users,OU=TEST mydomain,DC=mydomain,DC=com"
 
 # Disable all users in the disabled users OU
-Get-ADUser -Filter {Enabled -eq $True} -SearchBase "OU=Disabled Users,OU=instructorpaul,DC=instructorpaul,DC=com" | Disable-ADAccount
+Get-ADUser -Filter {Enabled -eq $True} -SearchBase "OU=Disabled Users,OU=TEST mydomain,DC=mydomain,DC=com" | Disable-ADAccount
 ```
