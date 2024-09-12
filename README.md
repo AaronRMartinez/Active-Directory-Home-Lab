@@ -53,6 +53,15 @@ Group Policy Procedures
   - Configuring Windows Firewall
   - Configuring Windows Registry Settings
 
+### Deploying Software with Group Policy
+![GP Software Deployment](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20GPDeploySoftware.jpg)
+
+### Configuring Domain Password and Account Lockout Policies with Group Policy
+![GP Software Deployment](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20GPPassAccountPolicies.jpg)
+
+### Configuring Windows Firewall with Group Policy
+![GP Configuring Windows Firewall](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20GPFirewall.jpg)
+
 Any Group Policy troubleshooting was conducted by either utilizing Resultant Set of Policy (RSOP.msc) or the Command Prompt. Executing commands such as **gpresult /r**.
 
 In order to automate laborious AD administrative tasks, PowerShell script execution was enabled. Once implemented, several PowerShell scripts were utilized to conduct common AD tasks. Such as:
