@@ -69,6 +69,9 @@ New-ADUser `
     -ChangePasswordAtLogon 1
 ```
 
+![PowerShell script for Adding AD Users](https://github.com/AaronRMartinez/Active-Directory-and-Group-Policy-Home-Lab/blob/main/ULab%20Screenshots/ULab%20PWRShellAddingUsers.jpg)
+
+
 **Configuring Roaming Profile Paths**
 
 ```
