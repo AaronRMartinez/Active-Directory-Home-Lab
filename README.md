@@ -46,4 +46,21 @@ Group Policy Procedures
 
 Any Group Policy troubleshooting was conducted by either utilizing Resultant Set of Policy (RSOP.msc) or the Command Prompt. Executing commands such as **gpresult /r**.
 
-In order to automate laborious AD administrative tasks, PowerShell script execution was enabled. 
+In order to automate laborious AD administrative tasks, PowerShell script execution was enabled. Once implemented, several PowerShell scripts were utilized to conduct common AD tasks. Such as:
+
+**Creating User Accounts**
+
+```Import-Module ActiveDirectory
+
+$firstname = Read-Host -Prompt "Please enter the first name"
+$lastname = Read-Host -Prompt "Please enter the last name"
+
+New-ADUser `
+    -Name "$firstname $lastname" `
+    -GivenName $firstname `
+    -Surname $lastname `
+    -UserPrincipalName "$firstname.$lastname" `
+    -AccountPassword (ConvertTo-SecureString "P@$$w0rd123" -AsPlainText -Force) `
+    -Path "OU=Domain Users,OU=instructorpaul,DC=instructorpaul,DC=com" `
+    -ChangePasswordAtLogon 1
+```
